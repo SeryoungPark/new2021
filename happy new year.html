@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy New Year</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+	
+<style>
+	body{
+	}
+  #draggable, #draggable2, #draggable3, #draggable4, #draggable5 { 
+	  																width: 200px;
+	  																padding: 0;
+	  																display: inline-block;
+																	border: none;
+																	background: none;
+																}
+	.center {
+			display: inline-block;
+			margin-left: 20%;
+			margin-right: auto;
+			margin-top: 50px;
+			width: 800px;
+			}
+	.button{
+		display:inline;
+  		width: ;
+		background-image: linear-gradient(to bottom, #FFE300, #FF4900)  ;
+ 		color: black;
+  		border-radius: 4px;
+		border: 1px solid #515151 ;
+  		padding: 10px 15px ;
+  		font-size: 16px;
+  		cursor: pointer;
+		margin-left: 200px ;
+		margin-right: ;
+		margin-top: ;
+  		}
+	#grid{
+			display: grid;
+			grid-template-columns: 250px 250px 1fr;
+		}
+	p{
+		font-size: 18px;
+		color: #FF3400;
+		margin-left: 43px;
+	}
+		
+	h1{
+		color: #FF3400;
+	}
+	/*cursor{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		image-orientation: 
+	}
+</style>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script>
+  $( function() {
+    $( "#draggable").draggable();
+  } );
+		
+		$( function() {
+    $( "#draggable2" ).draggable();
+  } );
+			$( function() {
+    $( "#draggable3" ).draggable();
+  } );
+		$( function() {
+    $( "#draggable4" ).draggable();
+  } );
+		$( function() {
+    $( "#draggable5" ).draggable();
+  } );
+  </script>
+	
+	
+	<script type="text/javascript">
+   $(document).ready(function(){
+      $('#button').on("click", function(){
+         $('body').css("background-image", "url('message.png')");
+		  $("p").hide();
+      });
+   });
+	
+	</script>
+	
+</head>
+
+<body>
+	
+	<h1>🎁서영의 새해인사🎁 </h1>
+	<p> 1. 척박한 2020탓에 손가락들이 추워하고 있어요.</p>
+	<p> 2. 아래 손가락 장갑을 손가락으로 드래그 해 끼워주세요.</p>
+	<p> 3. "Warm Up" 버튼을 클릭해주세요.</p>
+	<p> *인스타그램에 @threr4_go 태그하고 인증해주시면 달걀 스티커 드립니다. (선착순15명) </p>
+	
+
+<div id="grid">
+<div>
+	<div id="draggable" class="ui-widget-content">
+		Wealth
+		<img src="finger.png" alt="little finger" width="220px">
+	</div>
+	
+	<div id="draggable2" class="ui-widget-content">
+  	Luck
+			<img src="finger2.png" alt="2nd finger" width="190px">
+	</div>
+	
+	<div id="draggable3" class="ui-widget-content">
+  	Honor
+			<img src="finger3.png" alt="3rd finger" width="240px">
+	</div>
+</div>
+	
+<div>
+	<div id="draggable4" class="ui-widget-content">
+  	Health
+		<img src="finger4.png" alt="4th finger" width="170px">
+	</div>
+	
+	<div id="draggable5" class="ui-widget-content">
+  	love you
+		<img src="finger5.png" alt="5th finger" width="230px">
+	</div>
+</div>
+	
+<div id="stable">
+	<div id="button"><input class="button" type="button" value="Warm Up  🔥"  ></div>
+	
+	<br>
+	<img src="hand_real.png" alt="hand" class="center" >
+	
+</div>
+</div>
+
+</body>
+</html>
